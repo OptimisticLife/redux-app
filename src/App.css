@@ -10,9 +10,63 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  padding: 5vw;
 }
 
 .App {
-  text-align: center;
+  text-align: start;
+  min-height: 100vh;
+  padding: 5vw;
+}
+
+.App button {
+  margin-bottom: 2rem;
+  padding: 0.8rem 2.4rem;
+  border-radius: 0.3rem;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.appdefault {
+  color: rgb(252, 252, 252);
+  background-color: rgb(15, 14, 14);
+}
+
+.btndefault {
+  background-color: rgb(252, 252, 252);
+  color: rgb(15, 14, 14);
+}
+
+.dark {
+  color: rgb(252, 252, 252);
+  background-color: rgb(15, 14, 14);
+  animation: darkTheme 500ms linear;
+}
+
+@keyframes darkTheme {
+  0% {
+    background-color: rgb(252, 252, 252);
+    color: rgb(15, 14, 14);
+  }
+  100% {
+    color: rgb(252, 252, 252);
+    background-color: rgb(15, 14, 14);
+  }
+}
+
+.light {
+  background-color: rgb(252, 252, 252);
+  color: rgb(15, 14, 14);
+  animation: lightTheme 500ms linear;
+}
+
+@keyframes lightTheme {
+  0% {
+    color: rgb(252, 252, 252);
+    background-color: rgb(15, 14, 14);
+  }
+  100% {
+    background-color: rgb(252, 252, 252);
+    color: rgb(15, 14, 14);
+  }
 }
